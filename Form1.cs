@@ -460,5 +460,28 @@ namespace BaskanlikTEST
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("NASIL OYANANIR - REHBER");
+            MessageBox.Show("Oyuncu başlangıçta 10000 para ile başlar ve oyunun asıl amacı sahip olduğu para ile birlikte" +
+            "Tanınma seviyesini olabildiğince yukarıda tutarak başkan olmak. Tanınma seviyesi %50 nin üstüne çıkarsa seçimden sonra başkan olur." +
+            "Para her tur atlandığında 5000 artar (Oyuncu başkan değilse) eğer başkansa hazineye 8000 eklenir.");
+            MessageBox.Show("Oyuncu elindeki para ile birlikte tanınma seviyesini farklı yollarla yükseltmeye çalışır. Başkan değilken" +
+            "seçimi kazanana kadar en fazla 2 defa seçime girme hakkı var. %50 nin üstünde tanınma seviyesiyle seçime girilirse seçim kazanılır.");
+            MessageBox.Show("Her tur atlandığında tanınma seviyesi ayrıyeten -2% düşer. Eğer oyuncu başkan ise tanınma -3% düşer.");
+            MessageBox.Show("Oyuncu başkan olunca farklı yönetim seviyeleri de açılır. Başkan olduğunda işler daha zorlaşır ve devletin sorumluluğu üstlenilmiş olur" + 
+            "Eğer tanınma seviyesi başkanken -15% Altına düşerse halk isyan eder. Eğer oyuncu başkan değilse -20% tanınma seviyesinin altına düştüğü an zorla istifa edilir.");
+            MessageBox.Show("Oyuncu başkenken Askeri güç ve Sağlık sektörü -10% oranının altına giderse devlet çöker ve oyun biter.");
+            MessageBox.Show("İyi şanslar, oyunda her hangi bir hata ve BUG görürseniz bildirmenizden mutluluk duyarım.");
+            MessageBox.Show("İletişim bilgileri YAPIMCI bölümünde.");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("YAPIMCI Bilgileri");
+            MessageBox.Show("Programlayıcı : MURATCAN YANIK \nMantıksal Hata Bakımı : AHMET AĞAÇÇAVDIRAN");
+            MessageBox.Show("MURATCAN YANIK DC : muratcanyanik#0500 \nAHMET AĞAÇÇAVDIRAN DC : ahmetagaccavdiran#0034");
+        }
     }
 }
