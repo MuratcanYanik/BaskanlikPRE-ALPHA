@@ -39,7 +39,6 @@ namespace BaskanlikTEST
             this.btnDonate = new System.Windows.Forms.Button();
             this.btnTur = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblAy = new System.Windows.Forms.Label();
             this.btnSecim = new System.Windows.Forms.Button();
             this.lblAskeri = new System.Windows.Forms.Label();
@@ -49,6 +48,10 @@ namespace BaskanlikTEST
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnGuncellemeler = new System.Windows.Forms.Button();
+            this.lblGun = new System.Windows.Forms.Label();
+            this.lblYil = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Paralbl
@@ -97,7 +100,7 @@ namespace BaskanlikTEST
             this.btnMiting.Name = "btnMiting";
             this.btnMiting.Size = new System.Drawing.Size(126, 28);
             this.btnMiting.TabIndex = 4;
-            this.btnMiting.Text = "Miting Yap(-2000)";
+            this.btnMiting.Text = "Miting Yap(-1000)";
             this.btnMiting.UseVisualStyleBackColor = true;
             this.btnMiting.Click += new System.EventHandler(this.btnMiting_Click);
             // 
@@ -107,7 +110,7 @@ namespace BaskanlikTEST
             this.btnReklam.Name = "btnReklam";
             this.btnReklam.Size = new System.Drawing.Size(126, 28);
             this.btnReklam.TabIndex = 5;
-            this.btnReklam.Text = "Reklam Yap(-6500)";
+            this.btnReklam.Text = "Reklam Yap(-3250)";
             this.btnReklam.UseVisualStyleBackColor = true;
             this.btnReklam.Click += new System.EventHandler(this.btnReklam_Click);
             // 
@@ -117,7 +120,7 @@ namespace BaskanlikTEST
             this.btnTv.Name = "btnTv";
             this.btnTv.Size = new System.Drawing.Size(137, 28);
             this.btnTv.TabIndex = 6;
-            this.btnTv.Text = "Televizyona Çık(-10000)";
+            this.btnTv.Text = "Televizyona Çık(-5000)";
             this.btnTv.UseVisualStyleBackColor = true;
             this.btnTv.Click += new System.EventHandler(this.btnTv_Click);
             // 
@@ -127,7 +130,7 @@ namespace BaskanlikTEST
             this.btnDonate.Name = "btnDonate";
             this.btnDonate.Size = new System.Drawing.Size(126, 28);
             this.btnDonate.TabIndex = 7;
-            this.btnDonate.Text = "Bağış Yap(-7000)";
+            this.btnDonate.Text = "Bağış Yap(-3500)";
             this.btnDonate.UseVisualStyleBackColor = true;
             this.btnDonate.Click += new System.EventHandler(this.btnDonate_Click);
             // 
@@ -137,7 +140,7 @@ namespace BaskanlikTEST
             this.btnTur.Name = "btnTur";
             this.btnTur.Size = new System.Drawing.Size(126, 28);
             this.btnTur.TabIndex = 8;
-            this.btnTur.Text = "Diğer Tur(1 Ay)";
+            this.btnTur.Text = "Diğer Tur(15 Gün)";
             this.btnTur.UseVisualStyleBackColor = true;
             this.btnTur.Click += new System.EventHandler(this.btnTur_Click);
             // 
@@ -151,24 +154,14 @@ namespace BaskanlikTEST
             this.label1.TabIndex = 9;
             this.label1.Text = "Başkanlık Simulator";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(331, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 26);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Ay : ";
-            // 
             // lblAy
             // 
             this.lblAy.AutoSize = true;
             this.lblAy.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAy.Location = new System.Drawing.Point(378, 72);
+            this.lblAy.Location = new System.Drawing.Point(377, 72);
             this.lblAy.Name = "lblAy";
             this.lblAy.Size = new System.Drawing.Size(24, 26);
-            this.lblAy.TabIndex = 11;
+            this.lblAy.TabIndex = 33;
             this.lblAy.Text = "1";
             // 
             // btnSecim
@@ -224,7 +217,7 @@ namespace BaskanlikTEST
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(166, 415);
+            this.button1.Location = new System.Drawing.Point(50, 415);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(202, 23);
             this.button1.TabIndex = 17;
@@ -234,7 +227,7 @@ namespace BaskanlikTEST
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(402, 415);
+            this.button2.Location = new System.Drawing.Point(283, 415);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(202, 23);
             this.button2.TabIndex = 18;
@@ -251,11 +244,55 @@ namespace BaskanlikTEST
             this.label3.TabIndex = 19;
             this.label3.Text = "PRE-ALPHA";
             // 
+            // btnGuncellemeler
+            // 
+            this.btnGuncellemeler.Location = new System.Drawing.Point(505, 415);
+            this.btnGuncellemeler.Name = "btnGuncellemeler";
+            this.btnGuncellemeler.Size = new System.Drawing.Size(202, 23);
+            this.btnGuncellemeler.TabIndex = 20;
+            this.btnGuncellemeler.Text = "Güncellemeler";
+            this.btnGuncellemeler.UseVisualStyleBackColor = true;
+            this.btnGuncellemeler.Click += new System.EventHandler(this.btnGuncellemeler_Click);
+            // 
+            // lblGun
+            // 
+            this.lblGun.AutoSize = true;
+            this.lblGun.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblGun.Location = new System.Drawing.Point(335, 72);
+            this.lblGun.Name = "lblGun";
+            this.lblGun.Size = new System.Drawing.Size(30, 26);
+            this.lblGun.TabIndex = 21;
+            this.lblGun.Text = "1 ";
+            // 
+            // lblYil
+            // 
+            this.lblYil.AutoSize = true;
+            this.lblYil.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblYil.Location = new System.Drawing.Point(405, 72);
+            this.lblYil.Name = "lblYil";
+            this.lblYil.Size = new System.Drawing.Size(72, 26);
+            this.lblYil.TabIndex = 22;
+            this.lblYil.Text = "/ 1980";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(364, 72);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(18, 26);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "/";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblYil);
+            this.Controls.Add(this.lblGun);
+            this.Controls.Add(this.btnGuncellemeler);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -265,7 +302,6 @@ namespace BaskanlikTEST
             this.Controls.Add(this.lblAskeri);
             this.Controls.Add(this.btnSecim);
             this.Controls.Add(this.lblAy);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTur);
             this.Controls.Add(this.btnDonate);
@@ -277,6 +313,7 @@ namespace BaskanlikTEST
             this.Controls.Add(this.lblMoney);
             this.Controls.Add(this.Paralbl);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BAŞKANLIK SİMULATOR PRE-ALPHA";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -296,7 +333,6 @@ namespace BaskanlikTEST
         private System.Windows.Forms.Button btnDonate;
         private System.Windows.Forms.Button btnTur;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblAy;
         private System.Windows.Forms.Button btnSecim;
         private System.Windows.Forms.Label lblAskeri;
@@ -306,6 +342,10 @@ namespace BaskanlikTEST
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnGuncellemeler;
+        private System.Windows.Forms.Label lblGun;
+        private System.Windows.Forms.Label lblYil;
+        private System.Windows.Forms.Label label4;
     }
 }
 
